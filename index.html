@@ -18,20 +18,20 @@
 
 <body>
 
-    <form action="#" method="post" class="form">
-     <fieldset class="fieldset"> 
-        <legend>Login</legend>
+    <form action="#" method="post" autocomplete="off" class="form">
+     <fieldset class="form__fieldset"> 
+        <legend class="form__title">Login</legend>
 
-        <label for="user">Usúario</label>
-        <input type="text" name="user" id="user" required>
+        <label for="user" class="form__label">Usuário</label>
+        <input type="text" id="user" name="user" required class="form__input">
 
-        <label for="pass">Senha</label>
-        <input type="password" name="pass" id="pass">
+        <label for="pass" class="form__label">Senha</label>
+        <input type="password" id="pass" name="pass" required class="form__input">
 
-        <div>
-            <input type="submit" value="Login">
-            <p><a href="cadastro.html" target="_blank">Cadastre-se</a></p>
-            <p><a href="recupsenha.html" target="_blank">Esqueci minha senha</a></p>
+        <div class="form__actions">
+            <input type="submit" value="Login" class="btn_login">
+            <a href="cadastro.html" target="_blank" class="btn_cadastro">Cadastre-se</a>
+            <a href="recupsenha.html" target="_blank" class="forgetpass">Esqueci minha senha</a>
         </div>
      </fieldset>
     </form>

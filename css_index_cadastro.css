@@ -1,0 +1,113 @@
+:root {
+--primary-color: #9400D3;
+}
+
+html {font-size: 62.5%;}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--primary-color); 
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.form {
+    width: 80%;
+    max-width: 50rem;
+    background-image: linear-gradient(to right, rgba(0,0,0, .2) 0.3rem, white .0.3rem);
+    border-radius: 2px;
+    padding: 2.0rem;
+}
+
+.form__fieldset {
+    display: flex;
+    border: none;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.form__title {
+    text-align: left;
+    font-weight: 300;
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    padding-top: 2.0rem;
+}
+
+.form__label {
+    padding: 1.0rem 1.0rem 1.0rem 0;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: 400;
+    color: #4F4F4F;
+}
+
+.form__input {
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    outline: none;
+    padding: 0.4rem 0;
+    font-size: 1.4rem;
+    transition: padding-left .05s;
+}
+
+.form__input:focus {
+    outline: 1px solid var(--primary-color);
+    padding-left: 0.2rem;
+}
+
+.form__actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.btn_login {
+    color: white;
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    padding:0.7rem 0.9rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    margin-top: 0.8rem;
+}
+
+.btn_cadastro {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    padding:0.7rem 0.9rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 0.8rem;
+}
+
+.forgetpass {
+    font-size: 1.0rem;
+    flex-grow: 1;
+    text-align: right;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+.possuicadastro {
+    font-size: 1.1rem;
+    flex-grow: 1;
+    text-align: right;
+    align-items: center;
+    margin-top: 0.8rem;
+}

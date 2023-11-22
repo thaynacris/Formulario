@@ -6,7 +6,7 @@
     <meta name="author" content="Thayná Cristina">
     <title>Cadastre-se</title>
 
-    <link rel="stylesheet" href="css_cadastro.css">
+    <link rel="stylesheet" href="css_index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,21 +18,22 @@
 <body>
 
     <form action="#" method="post" class="form">
-        <fieldset class="fieldset"> 
-           <legend>Cadastre-se</legend>
+        <fieldset class="form__fieldset"> 
+           <legend class="form__title">Cadastre-se</legend>
    
-           <label for="user">Usúario</label>
-           <input type="text" name="user" id="user" required>
+           <label for="user" class="form__label">Usúario</label>
+           <input type="text" name="user" id="user" required class="form__input">
 
-           <label for="email">E-mail</label>
-           <input type="email" name="e-mail" id="email">
+           <label for="email" class="form__label">E-mail</label>
+           <input type="email" name="e-mail" id="email" class="form__input">
    
-           <label for="pass">Senha</label>
-           <input type="password" name="pass" id="pass">
+           <label for="pass" class="form__label">Senha</label>
+           <input type="password" name="pass" id="pass" class="form__input">
    
-           <div>
-             <input type="submit" value="Cadastre-se">
-             <p>Já possui cadastro? <a href="index.html" target="_blank">Faça login.</a></p>
+           <div class="form__actions">
+             <input type="submit" value="Cadastre-se" class="btn_login">
+
+             <p class="possuicadastro">Já possui cadastro? <a href="index.html" target="_blank">Faça login</a></p>  
            </div>
         </fieldset>
        </form>
