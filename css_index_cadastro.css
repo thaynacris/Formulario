@@ -111,7 +111,3 @@ body {
     align-items: center;
     margin-top: 0.8rem;
 }
-
-a:hover {
-    color: var(--primary-color);
-}
